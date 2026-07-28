@@ -32,7 +32,7 @@ app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/expenses", expensesRoute);
 
 // SERVER
-const port = process.env.PORT || 3001;
+const port = Number(process.env.PORT) || 3001;
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server is running on port ${port}`);
 });
