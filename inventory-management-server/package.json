@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "seed": "tsx prisma/seed.ts",
-    "build": "rimraf dist && tsc",
-    "start": "npm run build && node dist/index.js",
-    "dev": "npm run build && concurrently \"tsc -w\" \"nodemon --watch dist dist/index.js\""
+    "build": "node init && rimraf dist && tsc",
+    "start": "node init && npm run build && node dist/index.js",
+    "dev": "node init && npm run build && concurrently \"tsc -w\" \"nodemon --watch dist dist/index.js\""
   },
   "keywords": [],
   "author": "",
