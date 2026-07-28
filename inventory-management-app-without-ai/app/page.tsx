@@ -22,5 +22,5 @@ export default function Home() {
     localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [darkMode]);
 
-  return <Dashboard darkMode={darkMode} />;
+  return <Dashboard />;
 }
