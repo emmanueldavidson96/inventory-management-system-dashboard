@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "numeral": "^2.0.6",
-    "recharts": "^3.10.1"
-  },
-  "devDependencies": {
-    "@types/numeral": "^2.0.5"
-  }
-}

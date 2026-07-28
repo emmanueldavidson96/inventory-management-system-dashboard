@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { useAppDispatch, useAppSelector } from "./store/hooks";
 import { setMode } from "./features/mode/modeSlice";
-import Dashboard from "./(components)/Dashboard/Dashboard";
+import Dashboard from "./dashboard/page";
 
 export default function Home() {
   const dispatch = useAppDispatch();

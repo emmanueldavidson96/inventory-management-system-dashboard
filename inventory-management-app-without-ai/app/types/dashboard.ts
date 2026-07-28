@@ -41,3 +41,22 @@ export interface DashboardMetrics {
   expenseSummary: ExpenseSummary[];
   expenseByCategory: ExpenseByCategory[];
 }
+
+export interface Product {
+  productId: string;
+  name: string;
+  price: number;
+  rating?: number;
+  stockQuantity: number;
+}
+export interface NewProduct {
+  name: string;
+  price: number;
+  rating?: number;
+  stockQuantity: number;
+}
+export interface User {
+  userId: string;
+  name: string;
+  email: string;
+}
